@@ -8,5 +8,5 @@ int main() {
   cout << "pris per dag? ";
   cin >> dagpris;
   cout << "totalt pris "
-       << dag_antal * dagpris << end1;
+       << dag_antal * dagpris << endl;
 }
