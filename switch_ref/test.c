@@ -1,0 +1,30 @@
+#include "unity/src/unity.h"
+#include "func.h"
+void tSUB() {
+  TEST_ASSERT_EQUAL(5, SUB(10,5));
+  TEST_ASSERT_EQUAL(5, SUB(15,10));
+  TEST_ASSERT_EQUAL(-10, SUB(-15,-5));
+}
+void tADD() {
+  TEST_ASSERT_EQUAL(5, ADD(2,3));
+  TEST_ASSERT_EQUAL(23, ADD(13,10));
+  TEST_ASSERT_EQUAL(120, ADD(20,100));
+}
+void tMUL() {
+  TEST_ASSERT_EQUAL(6, MUL(2,3));
+  TEST_ASSERT_EQUAL(130, MUL(13,10));
+  TEST_ASSERT_EQUAL(2000, MUL(20,100));
+}
+void tDIV() {
+  TEST_ASSERT_EQUAL(2, DIV(6,3));
+  TEST_ASSERT_EQUAL(1, DIV(10,10));
+  TEST_ASSERT_EQUAL(5, DIV(100,20));
+}
+int main(void) {
+  UNITY_BEGIN();
+  RUN_TEST(tSUB);
+  RUN_TEST(tADD);
+  RUN_TEST(tMUL);
+  RUN_TEST(tDIV);
+  return UNITY_END();
+}
