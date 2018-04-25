@@ -1,0 +1,29 @@
+age = 14
+name = "Kristofer"
+x = True
+print(age)
+print(name)
+print(x)
+
+if age > 30 and x == True:
+	print("to old")
+elif age < 10 or x == False:
+	print("to young")
+else:
+	print("ok!")
+
+
+print("################################")
+
+for i in range(5):
+	print(i)
+
+for i in range(35,39):
+	print(i)
+y = 6 
+for i in range(10):
+	value = y*i
+	print(value)
+
+for letter in "Hello, World":
+	print(letter)
